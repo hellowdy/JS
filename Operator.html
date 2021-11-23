@@ -10,12 +10,30 @@
    <script>
        let marie = {
            nom: "Marie",
-           age: 18,
+           age: 17,
            moyenne: 18,
        }
-       if(marie.age == 18){
+       switch (marie.age){
+           case 18:
+               console.log("Tu as 18 ans");
+               break
+            case 25:
+                console.log("Tu as un quart de siècle"); 
+                break
+            case 50:
+                console.log("Tu as un demi siècle");   
+                break
+            default:
+                console.log("Joyeux anniversaire");   
+       }
+       /*
+       if(marie.age === 18) {
            console.log("Tu as 18 ans");
-       } 
+       } else if (marie.age === 25) {
+            console.log("Tu as un quart de siècle");
+       } else if (marie.age === 50) {
+           console.log("Tu as un demi siècle");
+       }*/
 
    </script>
 </body>
